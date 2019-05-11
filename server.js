@@ -4,9 +4,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-const tableList = [
-    { table: "Test" }
-];
+const tableList = [];
 const waitList = [];
 
 app.use(express.urlencoded({ extended: true }));
