@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/table", (req, res) => {
-    console.log("Getting");
     res.sendFile(path.join(__dirname, "table.html"));
 });
 
