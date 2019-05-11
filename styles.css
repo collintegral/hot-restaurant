@@ -1,6 +1,6 @@
 body{
 
 };
-#inputf{
-margin: 5px;
+.form-group{
+padding: 5px !important;
 };
