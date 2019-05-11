@@ -40,29 +40,29 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="name" class="form-control" id="reserve-name" placeholder="Name Here">
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Phone Number</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="name" class="form-control" id="reserve-phone" placeholder="Phone Number Here">
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Email</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="name" class="form-control" id="reserve-email" placeholder="Email Here">
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Unique ID</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="name" class="form-control" id="reserve-id" placeholder="ID Here">
         </div>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
     </div>
 </body>
 <script type="text/javascript">
 
-  $(".submit").on("click", function (event) {
+  $("#submit").on("click", function (event) {
     event.preventDefault();
 
-    var newReservation = {
+    const newReservation = {
       customerName: $("#reserve-name").val().trim(),
       phoneNumber: $("#reserve-phone").val().trim(),
       customerEmail: $("#reserve-email").val().trim(),
@@ -75,7 +75,6 @@
 
         alert(data);
         window.location.pathname = "/table";
-      })
-
-  })
+      });
+  });
 </script>
